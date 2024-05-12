@@ -1,3 +1,15 @@
+body{
+background: #111;
+-webkit-text-fill-color: #FFFFFF;
+background-image: url("./crystal.png");
+}
+#bg{
+
+}
+button{
+-webkit-text-fill-color: #000000
+}
+
 #name{
   width:195px;
 }
@@ -17,4 +29,11 @@
 #banner{
   width:350px;
   height:45px;
+}
+
+#name ::placeholder{
+-webkit-text-fill-color: #000;
+}
+#name{
+-webkit-text-fill-color: #000;
 }
