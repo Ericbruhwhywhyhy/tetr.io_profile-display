@@ -7,9 +7,13 @@ async function plzfetch() {
   document.getElementById("rank").innerHTML = "Fetching..."
   const response = await fetch(URL + tetrioname.value);
   const tetriostats = await response.json();
+  const tetrioavatar = JSON.stringify(tetriostats.data.user.avatar_revision)
+  const tetrioid = tetriostats.data.user._id
   //log the username of the Profile :oyes:
   console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
+  console.log("https://tetr.io/user-content/avatars/"+tetrioid.jpg+"?rv="+tetrioavatar)
+  document.getElementById("avatar").src="https://tetr.io/user-content/avatars/"+tetrioid+".jpg?rv="+tetrioavatar
 //SOMEHOW THIS FUCKING WORKED💀💀💀💀
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("z") && JSON.stringify(tetriostats.data.user.league.rating) > "-1"){
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/z.png"
