@@ -3,6 +3,7 @@ const tetrioname = document.getElementById("name");
 const URL = 'https://api.codetabs.com/v1/proxy?quest=https://ch.tetr.io/api/users/';
 
 async function plzfetch() {
+  document.getElementById("rank").innerHTML = "Fetching..."
   const response = await fetch(URL + tetrioname.value);
   const tetriostats = await response.json();
   //log the username of the Profile :oyes:
