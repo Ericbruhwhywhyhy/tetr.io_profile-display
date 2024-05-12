@@ -1,6 +1,7 @@
 //tetra channel api wirh cors proxy cause otherwise this wouldn't work
 const tetrioname = document.getElementById("name");
 const URL = 'https://api.codetabs.com/v1/proxy?quest=https://ch.tetr.io/api/users/';
+const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 
 async function plzfetch() {
   document.getElementById("rank").innerHTML = "Fetching..."
@@ -78,4 +79,8 @@ if ((tetriostats.data.user.league.rank) == "b") {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d.png"
   };
   
+}
+
+function plzredirect(){
+  window.location.href=TETRACHANNELURL+tetrioname.value
 }
