@@ -1,6 +1,6 @@
 body{
 width:100rem;
-font-size: 0.85rem;
+font-size: 1.25rem;
 background: #111;
 -webkit-text-fill-color: #FFFFFF;
 background-image: url("./crystal.png");
@@ -44,4 +44,10 @@ height: 3rem;
 #fetch{
 height: 4rem;
 width: 25rem;
+}
+
+#leagueinfo {
+position: absolute;
+top: 20rem;
+left: 70rem;
 }
