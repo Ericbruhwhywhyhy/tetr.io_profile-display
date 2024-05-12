@@ -3,14 +3,69 @@ const tetrioname = document.getElementById("name");
 const URL = 'https://api.codetabs.com/v1/proxy?quest=https://ch.tetr.io/api/users/';
 
 async function plzfetch() {
-  console.log(tetrioname)
   const response = await fetch(URL + tetrioname.value);
   const tetriostats = await response.json();
   //log the username of the Profile :oyes:
-  console.log(JSON.stringify(tetriostats))
+  console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
-  //yeah this doesn't work lol
-  if (JSON.stringify(tetriostats.data.user.league.rank) === "z") {
-    document.getElementById("rankimg").innerHTML = "https://tetr.io/res/league-ranks/z.png"
-  }
+//SOMEHOW THIS FUCKING WORKED💀💀💀💀
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("z")){
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/z.png"
+    console.log("its unknown")
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("x")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/x.png"
+    console.log("Ureyezthebez")
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("u")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/u.png"
+    console.log("its u :O")
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("ss")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/ss.png"
+    console.log("wow top 10% :oyes:")
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("s+")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s+.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("s")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("s-")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s-.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("a+")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a+.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("a")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("a-")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a-.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("b+")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s+.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("b")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("b-")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b-.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("c+")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c+.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("c")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("c-")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c-.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("d+")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d+.png"
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("d")) {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d.png"
+  };
+  //same thing but with bestrank (uhhh gonna add this latef)
 };
