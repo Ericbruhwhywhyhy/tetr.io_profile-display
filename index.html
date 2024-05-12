@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width, initial-scale=1.0">
   <title>TETR.IO unofficial information fetcher</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -12,11 +11,14 @@
 <div id="bg">
 <p>VER: 0.2.7p2</p>
 <h2 id="note">⚠⚠NOTE: THIS IS W.I.P⚠⚠</h2>
-<input type="text" size="20" id="name" placeholder="type your TETR.IO username here..."></input>
+<input type="text" id="name" placeholder="type your TETR.IO username here..."></input>
 <button id="fetch" onclick="plzfetch()">FETCH</button>
+<div>
 <button id="redirect" onclick="plzredirect()">REDIRECT TO USER'S TETRA CHANNEL PROFILE</button>
-<button id="40lbest" onclick="best40lrecord()">OPEN USER'S BEST 40L RECORD</button>
-<button id="40lbest" onclick="bestblitzrecord()">OPEN USER'S BEST BLITZ RECORD</button>
+<div><button id="40lbest" onclick="best40lrecord()">OPEN USER'S BEST 40L RECORD</button></div>
+<div><button id="blitzbest" onclick="bestblitzrecord()">OPEN USER'S BEST BLITZ RECORD</button></div>
+
+</div>
 <div id="tetriostats">
     <p>User's banner (if not showing up either user has no banner or user doesn't have supporter):</p>
     <img id="banner" src=""></img>
