@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TETR.IO unofficial information fetcher</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -19,21 +19,23 @@
 <div><button id="blitzbest" onclick="bestblitzrecord()">OPEN USER'S BEST BLITZ RECORD</button></div>
 
 </div>
+<p id="justfetchdude">Just fetch! Already fetching? It may take a while for information to show up</p>
 <div id="tetriostats">
     <p>User's banner (if not showing up either user has no banner or user doesn't have supporter):</p>
     <img id="banner" src=""></img>
-  <p>User's avatar:</p>
-  <img id="avatar" src="https://tetr.io/res/league-ranks/z.png"><div><p>Supporter: <p id="supporter"></p></p></div></img>
-  <p>User's description (same thing as user's banner):</p>
-  <p id="description"></p>
-  <h1>Tetra League Rank:</h1><p id="rank">Just fetch! Already fetching? It may take a while for information to show up</p>
+<div><p>User's avatar:</p>
+  <img id="avatar" src="https://tetr.io/res/league-ranks/z.png"></img><div>User's description (same thing as user's banner):
+    <p id="description"></p></div></div>
+  <div>
+<h1>Tetra League Rank:</h1>
+<p id="rank"></p>
 <img id="rankimg"></div></div>
-<h1>Tetra League Ratings: </h1><p id ="rating"
->hmmmm</p>TR</div>
+<h1>Tetra League Ratings: </h1>
+<h2 id ="rating"
+>hmmmm</h2>TR</div>
 <p>*-1 TR either means that the user haven't played a single tetra league match or they haven't finished the 10 game requirements to receive a rating</p></p>
-</div>
+</div></div>
 <script src="./main.js">
 </script>
 </body>
-
 </html>

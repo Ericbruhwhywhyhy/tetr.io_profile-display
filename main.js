@@ -20,7 +20,6 @@ async function plzfetch() {
   document.getElementById("banner").src="https://tetr.io/user-content/banners/"+tetrioid+".jpg?rv="+tetrioavatar
   document.getElementById("rating").innerHTML = tetriostats.data.user.league.rating
   document.getElementById("description").innerHTML = tetriostats.data.user.bio
-  document.getElementById("supporter").innerHTML = tetriostats.data.user.supporter
 //SOMEHOW THIS FUCKING WORKED💀💀💀💀
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("z") && JSON.stringify(tetriostats.data.user.league.rating) > "-1"){
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/z.png"
