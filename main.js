@@ -9,9 +9,14 @@ async function plzfetch() {
   console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
 //SOMEHOW THIS FUCKING WORKED💀💀💀💀
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("z")){
+  if (JSON.stringify(tetriostats.data.user.league.rank).includes("z") && JSON.stringify(tetriostats.data.user.league.rating) > "-1"){
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/z.png"
     console.log("its unknown")
+  }
+   else if (tetriostats.data.user.league.rank.includes("z") && JSON.stringify(tetriostats.data.user.league.rating) == "-1") {
+     document.getElementById("rank").innerHTML = "bruh"
+    document.getElementById("rankimg").src = "./bruh.jpg"
+    console.log("seriously bro what the fuck")
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("x")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/x.png"
