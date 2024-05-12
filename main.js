@@ -27,8 +27,8 @@ async function plzfetch() {
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("s+")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s+.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("s")) {
+    };
+  if ((tetriostats.data.user.league.rank) == "s"){
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s.png"
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("s-")) {
@@ -36,8 +36,8 @@ async function plzfetch() {
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("a+")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a+.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("a")) {
+  }
+  if ((tetriostats.data.user.league.rank) == "a") {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a.png"
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("a-")) {
@@ -45,27 +45,31 @@ async function plzfetch() {
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("b+")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s+.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("b")) {
+  };if ((tetriostats.data.user.league.rank) == "b") {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b.png"
-  };
+  
+  }
+if ((tetriostats.data.user.league.rank) == "b") {
+  document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b.png"
+};
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("b-")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b-.png"
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("c+")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c+.png"
   };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("c")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s.png"
+  if ((tetriostats.data.user.league.rank) == "c") {
+    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c.png"
   };
+  
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("c-")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c-.png"
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("d+")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d+.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("d")) {
+  }
+  if ((tetriostats.data.user.league.rank) == "d") {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d.png"
   };
-  //same thing but with bestrank (uhhh gonna add this latef)
-};
+  
+}
