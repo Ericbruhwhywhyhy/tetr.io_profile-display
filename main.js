@@ -4,6 +4,7 @@ const URL = 'https://api.codetabs.com/v1/proxy?quest=https://ch.tetr.io/api/user
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 
 async function plzfetch() {
+  document.getElementById('description').scrollIntoView();
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
   const response = await fetch(URL + tetrioname.value);

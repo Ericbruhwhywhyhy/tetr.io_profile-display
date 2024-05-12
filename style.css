@@ -1,4 +1,5 @@
 body{
+font-size: 1rem;
 background: #111;
 -webkit-text-fill-color: #FFFFFF;
 background-image: url("./crystal.png");
@@ -27,13 +28,19 @@ button{
   height:100px;
 }
 #banner{
-  width:350px;
-  height:45px;
+  width:975px;
+  height:115px;
 }
 
 #name ::placeholder{
 -webkit-text-fill-color: #000;
 }
 #name{
+width: 30rem;
+height: 4rem;
 -webkit-text-fill-color: #000;
+}
+#fetch{
+height: 4rem;
+width: 25rem;
 }
