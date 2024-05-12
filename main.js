@@ -78,7 +78,11 @@ if ((tetriostats.data.user.league.rank) == "b") {
   if ((tetriostats.data.user.league.rank) == "d") {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d.png"
   };
-  
+  if (JSON.stringify(tetriostats.data.user.role).includes("banned")) {
+    document.getElementById("rankimg").src = "./bruh.jpg"
+    document.getElementById("rank").innerHTML= "this mf is banned bro 💀💀💀💀💀💀💀💀💀💀💀💀💀💀"
+    console.log("this mf is banned bro💀💀💀💀")
+  };
 }
 
 function plzredirect(){
