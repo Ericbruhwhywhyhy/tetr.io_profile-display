@@ -19,7 +19,8 @@ checkurl();
 async function plzfetch() {
   const user = new URLSearchParams(window.location.search);
   console.log(user.has('username')); // true
-  document.getElementById('description').scrollIntoView();
+  //this used to fix too much zoom/dpi problem but now it's not an issue anymore.therefore, this code is unused
+  //document.getElementById('description').scrollIntoView();
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
  //prepare a bunch of stuff before api fetching begin
@@ -123,7 +124,7 @@ if ((tetriostats.data.user.league.rank) == "b") {
 //redirect to user's tetra channel profile using the combination of tetra channel url+username on button press
 function plzredirect(){
   window.location.href=TETRACHANNELURL+tetrioname.value
-}
+};
 
 //redirect to user's best 40l run on button press
 async function best40lrecord() {
@@ -132,7 +133,7 @@ async function best40lrecord() {
   const record = await recordjson.json()
   console.log(record.data.records.blitz.record._id)
   window.location.href = "https://tetr.io/#r:"+record.data.records['40l'].record.replayid
-}
+};
 
 //redirect to user's best blitz run on button press
 async function bestblitzrecord(){
@@ -140,4 +141,4 @@ async function bestblitzrecord(){
   const recordjson = await fetch(recordURL);
   const record = await recordjson.json()
   window.location.href = "https://tetr.io/#r:"+record.data.records.blitz.record.replayid
-}
+};
