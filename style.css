@@ -86,7 +86,7 @@ position: relative;
 left: 37%;
 top: 100%;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1280px) {
 #leagueinfo{
 size: 35rem;
 left: 60rem;
