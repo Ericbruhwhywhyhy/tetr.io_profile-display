@@ -6,6 +6,8 @@ const user = new URLSearchParams(window.location.search);
 
 //function that checks if the url has ?username parameter
 async function checkurl(){
+  console.log("TETR.IO U.P.D Loaded!")
+  console.log("⚠⚠⚠⚠⚠⚠⚠PLEASE DO NOT INSERT YOUR TETR.IO ACCOUNT INFORMATION OR SUCH THING IN THE CONSOLE. I DO NOT REQUIRE VISITORS TO DO SUCH THINGS. IF SOMEONE TELLS YOU TO DO IT, THEY MIGHT BE AN ATTACKER GOING TO STEAL YOUR ACCOUNT⚠⚠⚠⚠⚠⚠⚠");
   if (user.has('username') === true) {
   document.getElementById("name").value = user.get("username");
   await plzfetch()
@@ -37,7 +39,7 @@ async function plzfetch() {
   document.getElementById("avatar").src="https://tetr.io/user-content/avatars/"+tetrioid+".jpg?rv="+tetrioavatar
   //same thing as avatar
   document.getElementById("banner").src="https://tetr.io/user-content/banners/"+tetrioid+".jpg?rv="+tetrioavatar
-  document.getElementById("rating").innerHTML = tetriostats.data.user.league.rating
+  document.getElementById("rating").innerHTML = Math.round(tetriostats.data.user.league.rating)
  //same thing as avatar agaim
   document.getElementById("description").innerHTML = tetriostats.data.user.bio
 //SOMEHOW THIS FUCKING WORKED💀💀💀💀
@@ -49,7 +51,7 @@ async function plzfetch() {
    else if (tetriostats.data.user.league.rank.includes("z") && JSON.stringify(tetriostats.data.user.league.rating) == "-1") {
      document.getElementById("rank").innerHTML = "bruh"
     document.getElementById("rankimg").src = "./bruh.jpg"
-    console.log("seriously bro what the fuck")
+    console.log("no rank D:<")
   };
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("x")) {
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/x.png"
@@ -117,7 +119,7 @@ if ((tetriostats.data.user.league.rank) == "b") {
   if (JSON.stringify(tetriostats.data.user.league.rating) == "-1") {
           document.getElementById("rating").innerHTML = "bruh"
           document.getElementById("rankimg").src = "./bruh.jpg"
-          console.log("seriously bro what the fuck")
+          console.log("no rating D:<")
   };
 };
 
