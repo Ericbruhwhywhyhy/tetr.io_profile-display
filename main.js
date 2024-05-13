@@ -21,8 +21,9 @@ checkurl();
 async function plzfetch() {
   const user = new URLSearchParams(window.location.search);
   console.log(user.has('username')); // true
-  //this used to fix too much zoom/dpi problem but now it's not an issue anymore.therefore, this code is unused
+  //this used to fix too much zoom/dpi problem but now it's not an issue anymore.Therefore, this code is unused
   //document.getElementById('description').scrollIntoView();
+//not these though
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
  //prepare a bunch of stuff before api fetching begin
