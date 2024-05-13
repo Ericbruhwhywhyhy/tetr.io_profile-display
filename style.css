@@ -1,6 +1,6 @@
 body{
 overflow-x: hidden;
-width: 90rem;
+width: 100%;
 font-family: "Config Regular";
 font-size: 1.25rem;
 background: #111;
@@ -85,4 +85,15 @@ bottom: -75rem;
 position: relative;
 left: 37%;
 top: 100%;
+}
+@media only screen and (max-width: 1280px) {
+#leagueinfo{
+size: 35rem;
+left: 60rem;
+top: 20rem;
+}
+#banner{
+width: 900px;
+height: 115px
+}
 }
