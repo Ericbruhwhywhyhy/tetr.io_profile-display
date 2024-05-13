@@ -1,6 +1,6 @@
 //tetra channel api wirh cors proxy cause otherwise this wouldn't work
 const tetrioname = document.getElementById("name");
-const URL = 'https://api.codetabs.com/v1/proxy?quest=https://ch.tetr.io/api/users/';
+const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/users/';
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 
 async function plzfetch() {
@@ -92,6 +92,11 @@ if ((tetriostats.data.user.league.rank) == "b") {
     document.getElementById("rankimg").src = "./bruh.jpg"
     document.getElementById("rank").innerHTML= "this mf is banned bro 💀💀💀💀💀💀💀💀💀💀💀💀💀💀"
     console.log("this mf is banned bro💀💀💀💀")
+  };
+  if (JSON.stringify(tetriostats.data.user.league.rating) == "-1") {
+          document.getElementById("rating").innerHTML = "bruh"
+          document.getElementById("rankimg").src = "./bruh.jpg"
+          console.log("seriously bro what the fuck")
   };
 };
 

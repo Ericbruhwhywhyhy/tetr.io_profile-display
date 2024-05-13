@@ -1,5 +1,5 @@
 body{
-font-family: "Config Bold";
+font-family: "Config Regular";
 width:100rem;
 font-size: 1.25rem;
 background: #111;
@@ -7,7 +7,7 @@ background: #111;
 background-image: url("./crystal.png");
 }
 @font-face {
-        font-family: "Config Bold";
+        font-family: "Config Regular";
         src: url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.eot");
         src: url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.eot?#iefix")format("embedded-opentype"),
                 url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.woff2")format("woff2"),
@@ -57,6 +57,8 @@ width: 25rem;
 }
 
 #leagueinfo {
+clip-path: polygon(0 0, 100% 0, 100% 82%, 100% 100%, 4% 100%, 0 86%);
+background: #FF4801;
 position: absolute;
 top: 20rem;
 left: 70rem;
