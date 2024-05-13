@@ -4,7 +4,7 @@ const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/use
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 const user = new URLSearchParams(window.location.search);
 
-
+//function that checks if the url has ?username parameter
 async function checkurl(){
   if (user.has('username') === true) {
   document.getElementById("name").value = user.get("username");
@@ -12,15 +12,17 @@ async function checkurl(){
   console.log("?username parameter contain: "+user.get('username'))
   };
 };
-
+//activate function after website loaded
 checkurl();
 
+//self explanatory
 async function plzfetch() {
   const user = new URLSearchParams(window.location.search);
   console.log(user.has('username')); // true
   document.getElementById('description').scrollIntoView();
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
+ //prepare a bunch of stuff before api fetching begin
   const response = await fetch(URL + tetrioname.value);
   const tetriostats = await response.json();
   const tetrioavatar = JSON.stringify(tetriostats.data.user.avatar_revision)
@@ -30,11 +32,15 @@ async function plzfetch() {
   console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
   console.log("https://tetr.io/user-content/avatars/"+tetrioid.jpg+"?rv="+tetrioavatar)
+   //fetch user's avatar using the combination of provided url+user's id.jpg + avatar last revision
   document.getElementById("avatar").src="https://tetr.io/user-content/avatars/"+tetrioid+".jpg?rv="+tetrioavatar
+  //same thing as avatar
   document.getElementById("banner").src="https://tetr.io/user-content/banners/"+tetrioid+".jpg?rv="+tetrioavatar
   document.getElementById("rating").innerHTML = tetriostats.data.user.league.rating
+ //same thing as avatar agaim
   document.getElementById("description").innerHTML = tetriostats.data.user.bio
 //SOMEHOW THIS FUCKING WORKED💀💀💀💀
+//btw this check what rank the user currently has and then chose rank icon accordingly
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("z") && JSON.stringify(tetriostats.data.user.league.rating) > "-1"){
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/z.png"
     console.log("its unknown")
@@ -114,10 +120,12 @@ if ((tetriostats.data.user.league.rank) == "b") {
   };
 };
 
+//redirect to user's tetra channel profile using the combination of tetra channel url+username on button press
 function plzredirect(){
   window.location.href=TETRACHANNELURL+tetrioname.value
 }
 
+//redirect to user's best 40l run on button press
 async function best40lrecord() {
   const recordURL = URL+tetrioname.value+'/records'
   const recordjson = await fetch(recordURL);
@@ -126,6 +134,7 @@ async function best40lrecord() {
   window.location.href = "https://tetr.io/#r:"+record.data.records['40l'].record.replayid
 }
 
+//redirect to user's best blitz run on button press
 async function bestblitzrecord(){
   const recordURL = URL+tetrioname.value+'/records'     
   const recordjson = await fetch(recordURL);
