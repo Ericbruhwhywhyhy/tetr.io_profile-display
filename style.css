@@ -1,6 +1,5 @@
 body{
 overflow-x: hidden;
-width: 100%;
 font-family: "Config Regular";
 font-size: 1.25rem;
 background: #111;
@@ -29,8 +28,7 @@ height: 50px;
 #note{
   background:#4EC234;
   opacity: 0.5;
-  width: 100%;
-}
+  width: 999rem;}
 #avatar{
   width:225px;
   height:225px;
@@ -70,7 +68,7 @@ padding: 10px;
 width: 275px;
 }
 #namenote{
-width: 100%;
+width: 999rem;
 background: #E90C0C;
 opacity: 0.25;
 }
