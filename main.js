@@ -2,8 +2,22 @@
 const tetrioname = document.getElementById("name");
 const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/users/';
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
+const user = new URLSearchParams(window.location.search);
+
+
+async function checkurl(){
+  if (user.has('username') === true) {
+  document.getElementById("name").value = user.get("username");
+  await plzfetch()
+  console.log("?username parameter contain: "+user.get('username'))
+  };
+};
+
+checkurl();
 
 async function plzfetch() {
+  const user = new URLSearchParams(window.location.search);
+  console.log(user.has('username')); // true
   document.getElementById('description').scrollIntoView();
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
@@ -118,4 +132,3 @@ async function bestblitzrecord(){
   const record = await recordjson.json()
   window.location.href = "https://tetr.io/#r:"+record.data.records.blitz.record.replayid
 }
-

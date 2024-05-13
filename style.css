@@ -1,4 +1,5 @@
 body{
+width: 90rem;
 font-family: "Config Regular";
 font-size: 1.25rem;
 background: #111;
@@ -27,7 +28,7 @@ height: 50px;
 #note{
   background:#4EC234;
   opacity: 0.5;
-  width: 89.5rem;
+  width: 100%;
 }
 #avatar{
   width:225px;
@@ -68,7 +69,7 @@ padding: 10px;
 width: 275px;
 }
 #namenote{
-width: 89.5rem;
+width: 100%;
 background: #E90C0C;
 opacity: 0.25;
 }
