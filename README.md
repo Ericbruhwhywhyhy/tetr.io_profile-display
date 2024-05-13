@@ -3,11 +3,13 @@ a work in progress TETR.IO unofficial profile displayer
 
 # Cool features!:
 ### ?user parameters (ex: https://ericbruhwhywhyhy.github.io/tetr.io_profile-display?username=osk)
+### Redirect to user's best 40 line, blitz run and their Tetra Channel with three convenient button!
 
 # TBA (to be added):
 ### Tetra League in-game stats (pps, apm, vs)
 ### User's Glicko, RD (rating deviation), Decaying status
 ### Log Export (for debugging purpose)
+### Stream overlay (Yes i know someone did this already)
 
 
 # Screenshot:
