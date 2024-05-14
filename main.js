@@ -13,11 +13,9 @@ async function checkurl(){
   console.log("?username parameter contain: "+user.get('username'))
   };
   if (user.has("debug") === true){
+    await eruda.init();
     document.getElementById("param").innerHTML = ""
     console.log("debug!")
-    eruda.init({
-      container: document.getElementsByName("body")
-    })
   }
 };
 //activate function after website loaded
