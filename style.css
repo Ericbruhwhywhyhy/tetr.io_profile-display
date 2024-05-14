@@ -62,7 +62,7 @@ width: 25rem;
 clip-path: polygon(0 0, 100% 0, 100% 82%, 100% 100%, 4% 100%, 0 86%);
 background: #BA0000 url('./assets/crystal.png');
 position: absolute;
-top: 20rem;
+top: 30rem;
 left: 70rem;
 padding: 10px;
 }
@@ -90,7 +90,7 @@ top: 100%;
 #leagueinfo{
 size: 35rem;
 left: 60rem;
-top: 20rem;
+top: 30rem;
 }
 #banner{
 width: 900px;
@@ -100,6 +100,7 @@ height: 115px
 @media only screen and (min-width: 1920px) {
 #leagueinfo{
 left: 100rem;
+top: 30rem;
 }
 }
 #osk{
