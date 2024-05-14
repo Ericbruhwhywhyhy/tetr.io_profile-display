@@ -1,7 +1,6 @@
 html{
 width: 690rem;
 zoom: 85%;
-overflow-x: hidden;
 }
 body{
 background:rgba(0,0,0,0.1) url("https://source.unsplash.com/random/?nature") no-repeat fixed;
