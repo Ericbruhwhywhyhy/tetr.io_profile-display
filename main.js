@@ -123,7 +123,7 @@ if ((tetriostats.data.user.league.rank) == "b") {
   };
   if (JSON.stringify(tetriostats.data.user.league.rating) == "-1") {
           document.getElementById("rating").innerHTML = "bruh"
-          document.getElementById("rankimg").src = "./bruh.jpg"
+          document.getElementById("rankimg").src = "./assets/bruh.jpg"
           console.log("no rating D:<")
   };
 };
