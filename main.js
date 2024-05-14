@@ -127,6 +127,10 @@ if ((tetriostats.data.user.league.rank) == "b") {
           document.getElementById("rankimg").src = "./assets/bruh.jpg"
           console.log("no rating D:<")
   };
+//check and display user's tetra league stats
+document.getElementById("pps").innerHTML = JSON.stringify(tetriostats.data.user.league.pps)
+document.getElementById("apm").innerHTML = JSON.stringify(tetriostats.data.user.league.apm)
+document.getElementById("vs").innerHTML = JSON.stringify(tetriostats.data.user.league.vs)
 };
 
 //redirect to user's tetra channel profile using the combination of tetra channel url+username on button press

@@ -81,6 +81,7 @@ top: 25rem;
 left: 75rem;
 padding: 30px;
 width: 200rem;
+height: 70rem;
 }
 #description{
 width: 275px;
@@ -125,6 +126,6 @@ top: 30rem;
 #osk{
 position: relative;
 bottom: -1rem;
-width: 45px;
-height: 45px;
+width: 55px;
+height: 55px;
 }
