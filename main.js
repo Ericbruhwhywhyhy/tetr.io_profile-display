@@ -3,9 +3,6 @@ const tetrioname = document.getElementById("name");
 const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/users/';
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 const user = new URLSearchParams(window.location.search);
-
-
-eruda.init();
 //function that checks if the url has ?username parameter
 async function checkurl(){
   console.log("TETR.IO U.P.D Loaded!")
@@ -16,11 +13,10 @@ async function checkurl(){
   console.log("?username parameter contain: "+user.get('username'))
   };
   if (user.has("debug") === true){
-    document.getElementById("param").innerHTML = "debug"
+    document.getElementById("param").innerHTML = ""
     console.log("debug!")
     eruda.init({
-      container: document.getElementsByName("body"),
-      tool: ['console', 'elements']
+      container: document.getElementsByName("body")
     })
   }
 };
