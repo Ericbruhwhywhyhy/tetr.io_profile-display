@@ -4,7 +4,7 @@ a work in progress TETR.IO unofficial profile displayer
 Version: 0.3.0
 
 # Cool features!:
-### ?user parameters (ex: https://ericbruhwhywhyhy.github.io/tetr.io_profile-display?username=osk)
+### Parameters! ?debug and ?username(ex: https://ericbruhwhywhyhy.github.io/tetr.io_profile-display?username=osk)
 ### Redirect to user's best 40 line, blitz run and their Tetra Channel with three convenient button!
 
 # TBA (to be added):
