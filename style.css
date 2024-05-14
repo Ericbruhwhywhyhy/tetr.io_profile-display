@@ -1,3 +1,8 @@
+html{
+width: 690rem;
+zoom: 85%;
+overflow-x: hidden;
+}
 body{
 background:rgba(0,0,0,0.1) url("https://source.unsplash.com/random/?nature") no-repeat fixed;
 background-size: cover;
@@ -70,7 +75,7 @@ width: 25rem;
 }
 
 #leagueinfo {
-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 4% 100%, 0 86%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 2% 100%, 0 90%);
 background: #BA0000 url('./assets/crystal.png');
 position: absolute;
 top: 25rem;
