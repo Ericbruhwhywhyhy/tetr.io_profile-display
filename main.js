@@ -2,19 +2,19 @@
 const tetrioname = document.getElementById("name");
 const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/users/';
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
-const user = new URLSearchParams(window.location.search);
+const param = new URLSearchParams(window.location.search);
 //function that checks if the url has ?username parameter
 async function checkurl(){
   console.log("TETR.IO U.P.D Loaded!")
   console.log("⚠⚠⚠⚠⚠⚠⚠PLEASE DO NOT INSERT YOUR TETR.IO ACCOUNT INFORMATION OR SUCH THING IN THE CONSOLE. I DO NOT REQUIRE VISITORS TO DO SUCH THINGS. IF SOMEONE TELLS YOU TO DO IT, THEY MIGHT BE AN ATTACKER GOING TO STEAL YOUR ACCOUNT⚠⚠⚠⚠⚠⚠⚠");
-  if (user.has('username') === true) {
-  document.getElementById("name").value = user.get("username");
+  if (param.has('username') === true) {
+  document.getElementById("name").value = param.get("username");
   await plzfetch()
-  console.log("?username parameter contain: "+user.get('username'))
+  console.log("?username parameter contain: "+param.get('username'))
   };
-  if (user.has("debug") === true){
+  if (param.has("debug") === true){
     await eruda.init();
-    document.getElementById("param").innerHTML = ""
+    document.getElementById("param").innerHTML = "debug"
     console.log("debug!")
   }
 };
@@ -24,7 +24,7 @@ checkurl();
 //self explanatory
 async function plzfetch() {
   const user = new URLSearchParams(window.location.search);
-  console.log(user.has('username')); // true
+  console.log(param.has('username')); // true
   //this used to fix too much zoom/dpi problem but now it's not an issue anymore.Therefore, this code is unused
   //document.getElementById('description').scrollIntoView();
 //not these though
