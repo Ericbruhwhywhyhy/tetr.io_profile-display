@@ -70,12 +70,13 @@ width: 25rem;
 }
 
 #leagueinfo {
-clip-path: polygon(0 0, 100% 0, 100% 82%, 100% 100%, 10% 100%, 0 86%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 4% 100%, 0 86%);
 background: #BA0000 url('./assets/crystal.png');
 position: absolute;
 top: 25rem;
-left: 80rem;
-padding: 20px;
+left: 75rem;
+padding: 30px;
+width: 69rem;
 }
 #description{
 width: 275px;

@@ -6,7 +6,7 @@ const param = new URLSearchParams(window.location.search);
 //function that checks if the url has ?username parameter
 async function checkurl(){
   console.log("TETR.IO U.P.D Loaded!")
-  console.log("⚠⚠⚠⚠⚠⚠⚠PLEASE DO NOT INSERT YOUR TETR.IO ACCOUNT INFORMATION OR SUCH THING IN THE CONSOLE. I DO NOT REQUIRE VISITORS TO DO SUCH THINGS. IF SOMEONE TELLS YOU TO DO IT, THEY MIGHT BE AN ATTACKER GOING TO STEAL YOUR ACCOUNT⚠⚠⚠⚠⚠⚠⚠");
+  console.log("⚠⚠⚠⚠⚠⚠⚠PLEASE DO NOT INSERT YOUR TETR.IO ACCOUNT INFORMATION OR SUCH THING IN THE CONSOLE. I DO NOT REQUIRE VISITORS TO DO SUCH THINGS. IF SOMEONE TELLS YOU TO DO IT, THEY MIGHT BE AN ATTACKER GOING TO STEAL YOUR ACCOUNT.⚠⚠⚠⚠⚠⚠⚠ tl;dr: it's not my fault if you lost your account without using this site properly");
   if (param.has('username') === true) {
   document.getElementById("name").value = param.get("username");
   console.log("?username has:"+param.get("username"))
