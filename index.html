@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>TETR.IO unofficial information fetcher</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./materialize.css">
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script src="./lib/materialize.js"></script>
 </head>
 <body>
 <div id="bg">
@@ -15,11 +17,12 @@
 <h2 id="note">⚠⚠NOTE: THIS IS W.I.P⚠⚠</h2>
 <p id="namenote">All lower case please!</p>
 <input type="text" id="name" placeholder="type your TETR.IO username here..."></input>
-<button id="fetch" onclick="plzfetch()">FETCH</button>
+<button class="btn waves-effect waves-light" id="fetch" onclick="plzfetch()">FETCH</button>
 <div>
-<button id="redirect" onclick="plzredirect()">REDIRECT TO USER'S TETRA CHANNEL PROFILE</button>
-<div><button id="40lbest" onclick="best40lrecord()">OPEN USER'S BEST 40L RECORD</button></div>
-<div><button id="blitzbest" onclick="bestblitzrecord()">OPEN USER'S BEST BLITZ RECORD</button></div>
+<button class="btn waves-effect waves-light" id="redirect" onclick="plzredirect()">REDIRECT TO USER'S TETRA CHANNEL PROFILE</button>
+<div></div>
+<div><button class="btn waves-effect waves-light" id="blitzbest" onclick="bestblitzrecord()">OPEN USER'S BEST BLITZ RECORD</button></div></div>
+<button class="btn waves-effect waves-light" id="fourtyline" onclick="best40lrecord()">OPEN USER'S 40L PB</button>
 
 </div>
 <p>TIP: add ?username=[INSERT USERNAME HERE WITHOUT THE BRACKET] to share information by url instantly!</p>
@@ -39,7 +42,7 @@
 >hmmmm</h2>TR
 <p></p></p>
 </div>
-<div id="copyright"><h2>©2024 Ericbruhwhywhyhy. Background by <a href="https://unsplash.com">Unsplash</a>. TETR.IO and it's API by <img id="osk" src="https://txt.osk.sh/branding/osk.svg" onclick="window.location.href='https://osk.sh';"></h2></div>
+<div id="copyright"><h3>©2024 Ericbruhwhywhyhy. Background by <a href="https://unsplash.com">Unsplash</a>. TETR.IO and it's API by <img id="osk" src="https://txt.osk.sh/branding/osk.svg" onclick="window.location.href='https://osk.sh';"></h2></div>
 </div>
 </div>
 <script src="./main.js">
