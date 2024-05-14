@@ -76,7 +76,7 @@ position: absolute;
 top: 25rem;
 left: 75rem;
 padding: 30px;
-width: 69rem;
+width: 100rem;
 }
 #description{
 width: 275px;
@@ -101,7 +101,7 @@ top: 100%;
 @media only screen and (min-width: 1280px) {
 #leagueinfo{
 size: 35rem;
-left: 60rem;
+left: 80rem;
 top: 30rem;
 }
 #rating{
