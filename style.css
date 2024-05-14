@@ -1,10 +1,12 @@
 body{
+background:rgba(0,0,0,0.1) url("https://source.unsplash.com/random/?nature") no-repeat fixed;
+background-size: cover;
+background-color: rgba(0,0,0, 0.6);
+background-blend-mode: darken;
 overflow-x: hidden;
 font-family: "Config Regular";
 font-size: 1.25rem;
-background: #111;
 -webkit-text-fill-color: #FFFFFF;
-background-image: url("./assets/crystal.png");
 }
 @font-face {
         font-family: "Config Regular";
@@ -14,9 +16,6 @@ background-image: url("./assets/crystal.png");
                 url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.woff")format("woff"),
                 url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.ttf")format("truetype"),
                 url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.svg#Config Bold")format("svg");
-}
-#bg{
-
 }
 button{
 font-size: 1rem;
@@ -61,7 +60,7 @@ width: 25rem;
 
 #leagueinfo {
 clip-path: polygon(0 0, 100% 0, 100% 82%, 100% 100%, 4% 100%, 0 86%);
-background: #FF4801;
+background: #BA0000 url('./assets/crystal.png');
 position: absolute;
 top: 20rem;
 left: 70rem;
@@ -76,6 +75,8 @@ background: #E90C0C;
 opacity: 0.25;
 }
 #copyright{
+right: 7.5rem;
+white-space: nowrap;
 width: 100%;
 position: relative;
 bottom: -75rem;
@@ -100,4 +101,10 @@ height: 115px
 #leagueinfo{
 left: 100rem;
 }
+}
+#osk{
+position: relative;
+bottom: -1rem;
+width: 45px;
+height: 45px;
 }

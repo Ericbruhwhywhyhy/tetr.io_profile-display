@@ -9,6 +9,7 @@ async function checkurl(){
   console.log("⚠⚠⚠⚠⚠⚠⚠PLEASE DO NOT INSERT YOUR TETR.IO ACCOUNT INFORMATION OR SUCH THING IN THE CONSOLE. I DO NOT REQUIRE VISITORS TO DO SUCH THINGS. IF SOMEONE TELLS YOU TO DO IT, THEY MIGHT BE AN ATTACKER GOING TO STEAL YOUR ACCOUNT⚠⚠⚠⚠⚠⚠⚠");
   if (param.has('username') === true) {
   document.getElementById("name").value = param.get("username");
+  console.log("?username has:"+param.get("username"))
   await plzfetch()
   console.log("?username parameter contain: "+param.get('username'))
   };
