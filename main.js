@@ -4,6 +4,8 @@ const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/use
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 const user = new URLSearchParams(window.location.search);
 
+
+eruda.init();
 //function that checks if the url has ?username parameter
 async function checkurl(){
   console.log("TETR.IO U.P.D Loaded!")
@@ -13,6 +15,14 @@ async function checkurl(){
   await plzfetch()
   console.log("?username parameter contain: "+user.get('username'))
   };
+  if (user.has("debug") === true){
+    document.getElementById("param").innerHTML = "debug"
+    console.log("debug!")
+    eruda.init({
+      container: document.getElementsByName("body"),
+      tool: ['console', 'elements']
+    })
+  }
 };
 //activate function after website loaded
 checkurl();

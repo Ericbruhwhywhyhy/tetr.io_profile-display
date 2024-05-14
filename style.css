@@ -4,7 +4,7 @@ font-family: "Config Regular";
 font-size: 1.25rem;
 background: #111;
 -webkit-text-fill-color: #FFFFFF;
-background-image: url("./crystal.png");
+background-image: url("./assets/crystal.png");
 }
 @font-face {
         font-family: "Config Regular";
