@@ -1,6 +1,7 @@
 //tetra channel api wirh cors proxy cause otherwise this wouldn't work
 const tetrioname = document.getElementById("name");
 const URL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/users/';
+const newsURL = 'https://cors-hijacker.vercel.app/api?url=https://ch.tetr.io/api/news/user_';
 const TETRACHANNELURL= 'https://ch.tetr.io/u/'
 const param = new URLSearchParams(window.location.search);
 //function that checks if the url has ?username parameter
@@ -37,10 +38,13 @@ async function plzfetch() {
   const tetrioavatar = JSON.stringify(tetriostats.data.user.avatar_revision)
   const tetriobanner = JSON.stringify(tetriostats.data.user.banner_revision)
   const tetrioid = tetriostats.data.user._id
+  const newsfetch = await fetch(newsURL+tetrioid)
+  const news = await newsfetch.json()
   //log the username of the Profile :oyes:
   console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
   console.log("https://tetr.io/user-content/avatars/"+tetrioid.jpg+"?rv="+tetrioavatar)
+  console.log(news)
    //fetch user's avatar using the combination of provided url+user's id.jpg + avatar last revision
   document.getElementById("avatar").src="https://tetr.io/user-content/avatars/"+tetrioid+".jpg?rv="+tetrioavatar
   //same thing as avatar
@@ -131,6 +135,9 @@ if ((tetriostats.data.user.league.rank) == "b") {
 document.getElementById("pps").innerHTML = JSON.stringify(tetriostats.data.user.league.pps)
 document.getElementById("apm").innerHTML = JSON.stringify(tetriostats.data.user.league.apm)
 document.getElementById("vs").innerHTML = JSON.stringify(tetriostats.data.user.league.vs)
+document.getElementById("newsresult1").innerHTML = JSON.stringify(news.data.news['0'].data.result)
+document.getElementById("newsuser1").innerHTML = JSON.stringify(news.data.news['0'].data.username)
+console.log(news.data.news['0'])
 };
 
 //redirect to user's tetra channel profile using the combination of tetra channel url+username on button press
