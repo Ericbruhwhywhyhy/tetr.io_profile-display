@@ -3,7 +3,6 @@ width: 690rem;
 zoom: 85%;
 }
 body{
-  overflow-y: scroll;
 background:rgba(0,0,0,0.1) url("https://source.unsplash.com/random/?nature") no-repeat fixed;
 background-size: cover;
 background-color: rgba(0,0,0, 0.6);
@@ -97,7 +96,7 @@ right: 0rem;
 white-space: nowrap;
 width: 100%;
 position: relative;
-bottom: -150rem;
+bottom: -75rem;
 }
 #copyright h2{
 position: relative;
@@ -129,18 +128,4 @@ position: relative;
 bottom: -1rem;
 width: 55px;
 height: 55px;
-}
-#usernews {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 2% 100%, 0 90%);
-  background: #436E37 url('./assets/crystal.png');
-  position: absolute;
-  top: 110rem;
-  left: 75rem;
-  padding: 30px;
-  width: 200rem;
-  height: 78rem;
-}
-
-#news1{
-white-space: no-wrap;
 }
