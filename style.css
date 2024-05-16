@@ -8,18 +8,10 @@ background-size: cover;
 background-color: rgba(0,0,0, 0.6);
 background-blend-mode: darken;
 overflow-x: hidden;
-font-family: "Config Regular";
+font-family: "Fira Sans", sans-serif;
+font-weight: 400px;
 font-size: 1.25rem;
 -webkit-text-fill-color: #FFFFFF;
-}
-@font-face {
-        font-family: "Config Regular";
-        src: url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.eot");
-        src: url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.eot?#iefix")format("embedded-opentype"),
-                url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.woff2")format("woff2"),
-                url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.woff")format("woff"),
-                url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.ttf")format("truetype"),
-                url("https://db.onlinewebfonts.com/t/e449a16afdbcd5c405b30eb9bbd6eca5.svg#Config Bold")format("svg");
 }
 #fourtyline{
 background: #FFBF09;

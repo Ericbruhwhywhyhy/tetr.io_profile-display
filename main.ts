@@ -22,6 +22,8 @@ async function checkurl(){
 //activate function after website loaded
 checkurl();
 
+
+"use strict";
 //self explanatory
 async function plzfetch() {
   const user = new URLSearchParams(window.location.search);
