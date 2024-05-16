@@ -1,7 +1,7 @@
 # TETR.IO U.nofficial P.rofile D.isplayer
 a work in progress TETR.IO unofficial profile displayer
 
-Version: 0.3.2
+Version: 0.3.3/TS
 
 # Cool features!:
 ### Parameters! ?debug and ?username(ex: https://ericbruhwhywhyhy.github.io/tetr.io_profile-display?username=osk)
