@@ -32,7 +32,7 @@ async function plzfetch() {
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
  //prepare a bunch of stuff before api fetching begin
-  const response = await fetch(URL + tetrioname.value);
+  const response = await fetch(URL + tetrioname.value.toLowerCase());
   const tetriostats = await response.json();
   const tetrioavatar = JSON.stringify(tetriostats.data.user.avatar_revision)
   const tetriobanner = JSON.stringify(tetriostats.data.user.banner_revision)
