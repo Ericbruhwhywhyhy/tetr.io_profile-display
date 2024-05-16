@@ -37,9 +37,12 @@ async function plzfetch() {
   const tetrioavatar = JSON.stringify(tetriostats.data.user.avatar_revision)
   const tetriobanner = JSON.stringify(tetriostats.data.user.banner_revision)
   const tetrioid = tetriostats.data.user._id
+  const tetraleaguerank = tetriostats.data.user.league.rank+".png"
+  const rankres = "https://tetr.io/res/league-ranks/"
   //log the username of the Profile :oyes:
   console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
+  document.getElementById("rankimg").src = rankres+tetraleaguerank
   console.log("https://tetr.io/user-content/avatars/"+tetrioid.jpg+"?rv="+tetrioavatar)
    //fetch user's avatar using the combination of provided url+user's id.jpg + avatar last revision
   document.getElementById("avatar").src="https://tetr.io/user-content/avatars/"+tetrioid+".jpg?rv="+tetrioavatar
@@ -59,64 +62,7 @@ async function plzfetch() {
     document.getElementById("rankimg").src = "./bruh.jpg"
     console.log("no rank D:<")
   };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("x")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/x.png"
-    console.log("Ureyezthebez")
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("u")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/u.png"
-    console.log("its u :O")
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("ss")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/ss.png"
-    console.log("wow top 10% :oyes:")
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("s+")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s+.png"
-    };
-  if ((tetriostats.data.user.league.rank) == "s"){
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("s-")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s-.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("a+")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a+.png"
-  }
-  if ((tetriostats.data.user.league.rank) == "a") {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("a-")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/a-.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("b+")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/s+.png"
-  };if ((tetriostats.data.user.league.rank) == "b") {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b.png"
   
-  }
-if ((tetriostats.data.user.league.rank) == "b") {
-  document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b.png"
-};
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("b-")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/b-.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("c+")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c+.png"
-  };
-  if ((tetriostats.data.user.league.rank) == "c") {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c.png"
-  };
-  
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("c-")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/c-.png"
-  };
-  if (JSON.stringify(tetriostats.data.user.league.rank).includes("d+")) {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d+.png"
-  }
-  if ((tetriostats.data.user.league.rank) == "d") {
-    document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/d.png"
-  };
   if (JSON.stringify(tetriostats.data.user.role).includes("banned")) {
     document.getElementById("rankimg").src = "./bruh.jpg"
     document.getElementById("rank").innerHTML= "this mf is banned bro 💀💀💀💀💀💀💀💀💀💀💀💀💀💀"
