@@ -1,5 +1,6 @@
-var typeScriptVersion = '4.0.3';
+//oh yeah this is unused since i have babel as my typescript compilation library
 
+var typeScriptVersion = '4.0.3';
 System.config({
   transpiler: 'ts',
   typescriptOptions: {

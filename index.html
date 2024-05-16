@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="node_modules/eruda/eruda.js"></script>
+  <script src="./lib/babel.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -9,7 +11,6 @@
   <meta name="description" content="A (work in progress) tool that fetch and display TETR.IO player's profile and their Tetra League stats! Made by Ericbruhwhywhyhy">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./materialize.css">
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
   <script src="./lib/materialize.js"></script>
 </head>
 <body>
@@ -50,11 +51,10 @@
 <li><h5>Versus Score: </h5><h6 id="vs"></h6></li>
 <p></p></p>
 </div>
-<div id="copyright"><h3>©2024 Ericbruhwhywhyhy. Background by <a href="https://unsplash.com">Unsplash</a>. TETR.IO and it's API is owned by <img id="osk" src="https://txt.osk.sh/branding/osk.svg" onclick="window.location.href='https://osk.sh';"></h2></div>
+<div id="copyright"><h3>©2024 Ericbruhwhywhyhy. Background by <a href="https://unsplash.com">Unsplash</a>. TETR.IO and it's API is owned by <img id="osk" src="./assets/osk.svg" onclick="window.location.href='https://osk.sh';"></h2></div>
 </div>
 </div>
- <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
- <script src="./config.js" type="module"></script>
+<script type="text/babel" src="./main.ts"></script>
 </script>
 </body>
 </html>
