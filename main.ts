@@ -9,7 +9,6 @@ async function checkurl(){
   console.log("⚠⚠⚠⚠⚠⚠⚠PLEASE DO NOT INSERT YOUR TETR.IO ACCOUNT INFORMATION OR SUCH THING IN THE CONSOLE. I DO NOT REQUIRE VISITORS TO DO SUCH THINGS. IF SOMEONE TELLS YOU TO DO IT, THEY MIGHT BE AN ATTACKER GOING TO STEAL YOUR ACCOUNT.⚠⚠⚠⚠⚠⚠⚠ tl;dr: it's not my fault if you lost your account without using this site properly");
   if (param.has('username') === true) {
   document.getElementById("name").value = param.get("username");
-  console.log("?username has:"+param.get("username"))
   await plzfetch()
   console.log("?username parameter contain: "+param.get('username'))
   };
@@ -26,8 +25,7 @@ checkurl();
 "use strict";
 //self explanatory
 async function plzfetch() {
-  const user = new URLSearchParams(window.location.search);
-  console.log(param.has('username')); // true
+  const user = new URLSearchParams(window.location.search)
   //this used to fix too much zoom/dpi problem but now it's not an issue anymore.Therefore, this code is unused
   //document.getElementById('description').scrollIntoView();
 //not these though
@@ -44,6 +42,7 @@ async function plzfetch() {
   //log the username of the Profile :oyes:
   console.log(JSON.stringify(tetriostats.data.user.league))
   document.getElementById("rank").innerHTML = JSON.stringify(tetriostats.data.user.league.rank)
+  //basically check user's rank and display them accordingly
   document.getElementById("rankimg").src = rankres+tetraleaguerank
   console.log("https://tetr.io/user-content/avatars/"+tetrioid.jpg+"?rv="+tetrioavatar)
    //fetch user's avatar using the combination of provided url+user's id.jpg + avatar last revision
@@ -53,8 +52,6 @@ async function plzfetch() {
   document.getElementById("rating").innerHTML = Math.round(tetriostats.data.user.league.rating)
  //same thing as avatar agaim
   document.getElementById("description").innerHTML = tetriostats.data.user.bio
-//SOMEHOW THIS FUCKING WORKED💀💀💀💀
-//btw this check what rank the user currently has and then chose rank icon accordingly
   if (JSON.stringify(tetriostats.data.user.league.rank).includes("z") && JSON.stringify(tetriostats.data.user.league.rating) > "-1"){
     document.getElementById("rankimg").src = "https://tetr.io/res/league-ranks/z.png"
     console.log("its unknown")
