@@ -11,8 +11,7 @@ Version: 0.3.3/TS
 ### Tetra League in-game stats (pps, apm, vs)
 ### User's Glicko, RD (rating deviation), Decaying status
 ### Log Export (for debugging purpose)
-### Stream overlay (Yes i know someone did this already)
-
+### Design rework cause this looks ugly ngl
 
 # Screenshot:
 ![Screenshot_2024-05-13-15-24-00-33](https://github.com/Ericbruhwhywhyhy/tetr.io_profile-display/assets/160207601/d430cf08-a8ea-41c2-b432-5a4d1cce0b1f)

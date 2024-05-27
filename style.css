@@ -1,5 +1,4 @@
 html{
-width: 100% auto;
 zoom: 85%;
 }
 body{
@@ -7,7 +6,6 @@ background:rgba(0,0,0,0.1) url("https://source.unsplash.com/random/?nature") no-
 background-size: cover;
 background-color: rgba(0,0,0, 0.6);
 background-blend-mode: darken;
-overflow-x: hidden;
 font-family: "Fira Sans", sans-serif;
 font-weight: 400px;
 font-size: 1.25rem;
@@ -36,7 +34,9 @@ height: 75px;
 #note{
   background:#4EC234;
   opacity: 0.5;
-  width: 999rem;}
+  width: 100% auto;
+	
+}
 #avatar{
   width:225px;
   height:225px;
@@ -72,7 +72,7 @@ position: absolute;
 top: 25rem;
 left: 75rem;
 padding: 30px;
-width: 200rem;
+width: 100% auto;
 height: 78rem;
 }
 #description{
