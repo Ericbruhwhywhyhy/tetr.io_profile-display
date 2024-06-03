@@ -1,11 +1,11 @@
 # TETR.IO U.nofficial P.rofile D.isplayer
 a work in progress TETR.IO unofficial profile displayer
 
-Version: 0.3.3/TS
+Version: 0.4/TS
 
 # Cool features!:
 ### Parameters! ?debug and ?username(ex: https://ericbruhwhywhyhy.github.io/tetr.io_profile-display?username=osk)
-### Redirect to user's best 40 line, blitz run and their Tetra Channel with three convenient button!
+### Redirect to user's best 40 line, blitz run and their Tetra Channel with three convenient buttons!
 
 # TBA (to be added):
 ### Tetra League in-game stats (pps, apm, vs)

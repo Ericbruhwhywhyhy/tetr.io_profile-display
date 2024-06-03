@@ -20,15 +20,13 @@ async function checkurl(){
 };
 //activate function after website loaded
 checkurl();
-
-
-"use strict";
 //self explanatory
 async function plzfetch() {
   const user = new URLSearchParams(window.location.search)
   //this used to fix too much zoom/dpi problem but now it's not an issue anymore.Therefore, this code is unused
   //document.getElementById('description').scrollIntoView();
 //not these though
+document.querySelector("#rankimg").src = "https://tetr.io/res/league-ranks/z.png"
   document.getElementById("avatar").src ="https://tetr.io/res/league-ranks/z.png"
   document.getElementById("rank").innerHTML = "Fetching..."
  //prepare a bunch of stuff before api fetching begin
@@ -45,6 +43,8 @@ async function plzfetch() {
   //basically check user's rank and display them accordingly
   document.getElementById("rankimg").src = rankres+tetraleaguerank
   console.log("https://tetr.io/user-content/avatars/"+tetrioid.jpg+"?rv="+tetrioavatar)
+  document.querySelector("#glicko").innerHTML = Math.round(tetriostats.data.user.league.glicko)
+  document.querySelector("#rd").innerHTML = Math.round(tetriostats.data.user.league.rd)
    //fetch user's avatar using the combination of provided url+user's id.jpg + avatar last revision
   document.getElementById("avatar").src="https://tetr.io/user-content/avatars/"+tetrioid+".jpg?rv="+tetrioavatar
   //same thing as avatar
